@@ -1,0 +1,14 @@
+com/horoscopo/MainActivity.java
+ com.horoscopo.MainActivity
+com/horoscopo/MainApplication.java
+ com.horoscopo.MainApplication
+ com.horoscopo.MainApplication$1
+com/horoscopo/ReactNativeFlipper.java
+ com.horoscopo.ReactNativeFlipper
+ com.horoscopo.ReactNativeFlipper$1
+ com.horoscopo.ReactNativeFlipper$2
+ com.horoscopo.ReactNativeFlipper$2$1
+com/horoscopo/BuildConfig.java
+ com.horoscopo.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
