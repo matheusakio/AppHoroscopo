@@ -4,12 +4,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     display: 'flex',
+    flex: 1,
     flexDirection: 'column',
-  },
-  titulo: {
-    marginTop: 80,
-    marginLeft: 20 
-
   },
   iconeClose: {
     height: 15,

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { View, Text, SafeAreaView, ActivityIndicator, Image, TouchableOpacity} from 'react-native';
+import { View, Text, SafeAreaView, ActivityIndicator, ScrollView, Image, TouchableOpacity} from 'react-native';
 import styles from './styles';
 import Header from '../../components/header/headerSignos'
 import NavSignos from '../../components/navSignos';
@@ -86,20 +86,22 @@ const Aquario = () => {
   },[])
   const navigation = useNavigation();
   return (
-    <SafeAreaView style={styles.container}>
-      {loading ? 
-        <ActivityIndicator size='small' color="black"/> 
+    <ScrollView>
+      <SafeAreaView style={styles.container}>
+        {loading ? 
+          <ActivityIndicator size='small' color="black"/> 
 
-      :
-      <>
-        <TouchableOpacity onPress={ () => navigation.navigate('Home')} style={styles.alinhamentoClose}>
-          <Image style={styles.iconeClose} source={require('../../assets/ilustracao/Close.png')}/>
-        </TouchableOpacity>
-        <Header uriHeader={headerSigno}/>
-        <NavSignos nomeSigno= {route.params.signo} uriSignos={imagemSigno} descricao={descricao}/>
-      </>
-      }
-    </SafeAreaView>
+        :
+        <>
+          <TouchableOpacity onPress={ () => navigation.navigate('Home')} style={styles.alinhamentoClose}>
+            <Image style={styles.iconeClose} source={require('../../assets/ilustracao/Close.png')}/>
+          </TouchableOpacity>
+          <Header uriHeader={headerSigno}/>
+          <NavSignos nomeSigno= {route.params.signo} uriSignos={imagemSigno} descricao={descricao}/>
+        </>
+        }
+      </SafeAreaView>
+    </ScrollView>
 
   )
 }

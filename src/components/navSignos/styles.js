@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 30
+    marginTop: 20
 
 
   },
   texto: {
-    marginTop: 20,
+    marginTop: 15,
     alignItems: 'center',
     justifyContent: 'center',
     maxWidth: 300,
@@ -31,11 +31,12 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
   },
   ilustracao: {
-    marginTop: 30
+    marginTop: 25
 
   },
   botaoHome: {
     marginTop: 30,
+    marginBottom:20,
     width: '90%',
     height: 35,
     backgroundColor: '#3a383a',

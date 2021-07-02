@@ -34,8 +34,8 @@ const navSignos = ({uriSignos, nomeSigno, descricao}) => {
   const navigation = useNavigation();
   return (
     <View style={styles.container} keyboardShouldPersistTaps='always'>
-      <View style={{height:125, width:120}}>
-        <Image style={{height: '100%', width:'100%'}}  source={uriSignos}/>
+      <View style={{height:120, width:120}}>
+        <Image style={{height: '100%', width:'100%'}}  resizeMode="contain" source={uriSignos}/>
       </View>
         <View style={styles.texto}>
           <Text style={styles.titulo}>{nomeSigno}</Text>
